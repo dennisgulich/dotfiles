@@ -1,0 +1,31 @@
+
+alias las='ls -las'
+alias ts='date +%s'
+alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias cask='brew cask'
+
+# apps
+
+alias lime='open -a "/Applications/Sublime Text.app"'
+
+# logs
+
+alias error_log='tail -f /var/log/apache2/error_log'
+alias access_log='tail -f /var/log/apache2/access_log'
+
+# flow
+
+alias flow='npm run-script flow'
+
+# react native
+
+alias rn='react-native'
+alias run-ios='react-native run-ios --simulator "iPhone 5s"'
+alias run-android='react-native run-android'
+
+# docker
+
+alias drma='docker rm $(docker ps -aq)'
+alias drmia='docker rmi $(docker images -q)'
+alias dc='docker-compose'
+alias dm='docker-machine'

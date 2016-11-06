@@ -1,0 +1,12 @@
+
+# display port info, example: port <number>
+
+function port() {
+    lsof -nP -iTCP:"$1"
+}
+
+# access docker container, example: docker-ssh <container-name>
+
+function docker-ssh() {
+    docker exec -it "$1" bash
+}
