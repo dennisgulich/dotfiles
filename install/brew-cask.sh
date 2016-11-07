@@ -15,13 +15,12 @@ apps=(
   sublime-text
   appcleaner
   iterm2
-  intellij-idea
-  docker
   react-native-debugger
-  libreoffice
-  atom
   charles
   skype
+  docker
+  intellij-idea
+  libreoffice
 )
 
 brew cask install "${apps[@]}"

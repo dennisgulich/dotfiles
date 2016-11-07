@@ -10,10 +10,8 @@ apps=(
   curl
   wget
   watchman
-  mcrypt
   maven
   gradle
-  flow
 )
 
 brew install "${apps[@]}"
