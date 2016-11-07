@@ -6,7 +6,6 @@ else
   return # `exit 1` would quit the shell itself
 fi
 
-for DOTFILE in "$DOTFILES_DIR"/system; do
-do
-  [ -f “$DOTFILE” ] && source “$DOTFILE”
+for DOTFILE in `find $DOTFILES_DIR/system -name '.*'`; do
+  [ -f $DOTFILE ] && source $DOTFILE
 done
