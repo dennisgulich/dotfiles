@@ -1,4 +1,7 @@
+
 brew install nvm
+
+. "$(dirname $(dirname $BASH_SOURCE[0]))/system/.nvm"
 
 nvm install 6
 nvm use 6

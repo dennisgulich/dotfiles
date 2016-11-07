@@ -7,5 +7,5 @@ else
 fi
 
 for DOTFILE in `find $DOTFILES_DIR/system -name '.*'`; do
-  [ -f $DOTFILE ] && source $DOTFILE
+  [ -f $DOTFILE ] && . $DOTFILE
 done
