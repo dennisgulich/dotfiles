@@ -1,12 +1,17 @@
 
-alias las='ls -las'
+alias l="ls -lash"      # List in long format, include dotfiles
+alias ld="ls -ld */"    # List in long format, only directories
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
 alias ts='date +%s'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
-alias cask='brew cask'
 
 # apps
 
 alias lime='open -a "/Applications/Sublime Text.app"'
+alias cask='brew cask'
 
 # logs
 
