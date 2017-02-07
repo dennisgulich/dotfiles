@@ -10,8 +10,8 @@ apps=(
   curl
   wget
   watchman
-  maven
-  gradle
+  node
+  yarn
 )
 
 brew install "${apps[@]}"

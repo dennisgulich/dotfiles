@@ -11,6 +11,8 @@
     br = branch
     co = checkout
 
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
     # show all deleted files in the repo
     deleted = "!git log --diff-filter=D --summary | grep delete"
 
@@ -27,3 +29,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
+[core]
+	excludesfile = /Users/dennisgulich/.gitignore_global

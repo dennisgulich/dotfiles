@@ -8,6 +8,8 @@ alias ....="cd ../../.."
 alias ts='date +%s'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 
+alias grep='grep --color=auto'
+
 # apps
 
 alias lime='open -a "/Applications/Sublime Text.app"'
