@@ -15,20 +15,11 @@ alias grep='grep --color=auto'
 alias lime='open -a "/Applications/Sublime Text.app"'
 alias cask='brew cask'
 
-# logs
-
-alias error_log='tail -f /var/log/apache2/error_log'
-alias access_log='tail -f /var/log/apache2/access_log'
-
-# flow
-
-alias flow='npm run-script flow'
-
 # react native
 
-alias rn='react-native'
-alias run-ios='react-native run-ios --simulator "iPhone 5s"'
-alias run-android='react-native run-android'
+alias rn='npx react-native-cli'
+alias run-ios='npx react-native-cli run-ios --simulator "iPhone 5s"'
+alias run-android='npx react-native-cli run-android'
 
 # docker
 
