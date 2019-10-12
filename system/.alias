@@ -1,13 +1,5 @@
-
-alias l="ls -lash"      # List in long format, include dotfiles
-alias ld="ls -ld */"    # List in long format, only directories
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-
 alias ts='date +%s'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
-
 alias grep='grep --color=auto'
 
 # apps
@@ -15,11 +7,13 @@ alias grep='grep --color=auto'
 alias lime='open -a "/Applications/Sublime Text.app"'
 alias cask='brew cask'
 
+# ios
+
+alias ios-list='instruments -s devices'
+
 # react native
 
 alias rn='npx react-native-cli'
-alias run-ios='npx react-native-cli run-ios --simulator "iPhone 5s"'
-alias run-android='npx react-native-cli run-android'
 
 # docker
 
@@ -27,3 +21,10 @@ alias drma='docker rm $(docker ps -aq)'
 alias drmia='docker rmi $(docker images -q)'
 alias dc='docker-compose'
 alias dm='docker-machine'
+
+alias k8-load='eval $(minikube docker-env)'
+alias k8-unload='eval $(minikube docker-env -u)'
+
+# shortcuts
+
+alias dev='cd ~/dev'

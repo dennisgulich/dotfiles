@@ -12,6 +12,7 @@ apps=(
   watchman
   node
   yarn
+  ack
 )
 
 brew install "${apps[@]}"
